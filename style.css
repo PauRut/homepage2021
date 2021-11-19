@@ -1,34 +1,67 @@
 body {
-    background: #4f1b64
-    /* background: lightcoral */
+  /* background: lightcoral */
 }
 
 .main-heading {
-    color: pink;
+  color: pink;
 }
 
-.secondary-heading {
-    color: white;
-    background-color: #b84242;
+.our-products__heading {
+  color: white;
+  background-color: #b84242;}
+
+
+.our-products__article{
+    color: #b84242;
+
 }
 
-section {
-    background: #ac7373;
-}
-
-img {
+.our-products__photo {
     width: 200px;
     height: inherit;
-}
+  }
+
+  .our-products__section {
+    display:inline-block;
+  }
+
 
 nav a {
-    color: green;
+  color: green;
 }
 
 a {
-    color: orange; 
+  color: orange;
+}
+
+.about-us {
+    color: #b84242;
+    background: #fff;
+}
+
+.about-us__article {
+    color:#b84242;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.about-us__link {
+
 }
 
 .navigation {
-    background: #b6a1a1;
+  background: #2dd145;
+  border-radius: 10px;
+  height: 30px;
+}
+
+.navigation__link {
+    color: #4f1b64;
+    display: inline-block;
+    margin: 6px 20px 0 0;
+}
+.navigation__link--homepage {
+    color: #b84242;
+    margin-left: 20px;
+
 }

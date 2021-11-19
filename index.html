@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-
-</head>
-<header class="navigation">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <header class="navigation">
     <nav>
-      <a href="index.html">Strona glowna</a>
-      <a href="uslugi.html"> Nasze uslugi</a>
-      <a href="sklep.html"> Nasz sklep</a>
-        </nav>
-</header>
+      <a class="navigation__link navigation__link--homepage" href="index.html"
+        >Strona glowna</a
+      >
+      <a class="navigation__link" href="uslugi.html"> Nasze uslugi</a>
+      <a class="navigation__link" href="sklep.html"> Nasz sklep</a>
+    </nav>
+  </header>
 
-<body>
-    <header><h1 class="main-heading">Piekne meble z zywicy na zamowienie</h1></header>
+  <body>
+    <header>
+      <h1 class="main-heading">Piekne meble z zywicy na zamowienie</h1>
+    </header>
     <main>
-        <section>
-            <h2 class="secondary-heading">Kim jestesmy</h2>
-            <article> Robimy stoly trewniane z rycyna <a href="https://skogsbjorn.no/produkter"> Nasze produkty</a>
-                <br><a href="https://dekonor.com/product/te-eller-sidebord-i-tre-og-resin/"> Zobacz jeden z
-                    przykladowych stolow.</a>
-            </article>
-        </section>
-        <section>
-            <h2 class="secondary-heading">Sprawdz nasze produkty</h2>
-            <article> Tutaj pojawi sie galeria ze stolami
-                <img src="bord.jpeg" alt="Una mesa de ricina">
-                                <img src="bord2.jpeg" alt="Una mesa de ricina">
-
-            </article>
-        </section>
+      <section>
+        <h2 class="about-us">Kim jestesmy</h2>
+        <article class="about-us__article">
+          Robimy stoly trewniane z rycyna
+          <a class="about-us__link" href="https://skogsbjorn.no/produkter">
+            Nasze produkty</a
+          >
+          <br /> Zobacz jeden z przykladowych stolow
+          <a
+            class="about-us__link"
+            href="https://dekonor.com/product/te-eller-sidebord-i-tre-og-resin/">
+            kliknij tu.</a>
+        </article>
+      </section>
+      <section class="our-products__section">
+        <h2 class="our-products__heading">Sprawdz nasze produkty</h2>
+        <article class="our-products__article">
+          <img class="our-products__photo" src="bord.jpeg" alt="Una mesa de ricina" />
+          <img class="our-products__photo" src="bord2.jpeg" alt="Una mesa de ricina" />
+        </article>
+      </section>
     </main>
-    <footer>Skontaktuj sie z nami <a href="#top">Wroc na gore strony</a></footer>
-    
-<script src="main.js"></script>
-</body>
+    <footer>
+      Skontaktuj sie z nami <a href="#top">Wroc na gore strony</a>
+    </footer>
 
+    <script src="main.js"></script>
+  </body>
 </html>
