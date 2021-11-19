@@ -1,0 +1,33 @@
+body {
+    background: lightcoral
+}
+
+.main-heading {
+    color: pink;
+}
+
+.secondary-heading {
+    color: white;
+    background-color: #b84242;
+}
+
+section {
+    background: #ffffff;
+}
+
+img {
+    width: 200px;
+    height: inherit;
+}
+
+nav a {
+    color: green;
+}
+
+a {
+    color: orange; 
+}
+
+.navigation {
+    background: #b6a1a1;
+}
