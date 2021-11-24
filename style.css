@@ -1,9 +1,35 @@
-body {
-  /* background: lightcoral */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
+
+.box {
+  background-color: rebeccapurple;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  animation-name: rotate;
+  animation-duration: 0.7s;
+  animation-direction: reverse;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .main-heading {
   color: pink;
+}
+.main-heading__header {
+  display: flexbox;
+  flex-direction: row;
 }
 
 .our-products__heading {
@@ -13,12 +39,19 @@ body {
 
 .our-products__article{
     color: #b84242;
-
 }
 
 .our-products__photo {
+  animation-name: slide;
     width: 200px;
-    height: inherit;
+    /* height: inherit; */
+  }
+  .our-products__photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
   }
 
   .our-products__section {
@@ -49,6 +82,11 @@ a {
 
 }
 
+.footer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .navigation {
   background: #2dd145;
   border-radius: 10px;
@@ -64,4 +102,25 @@ a {
     color: #b84242;
     margin-left: 20px;
 
+}
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }

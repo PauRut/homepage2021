@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <header class="navigation">
@@ -18,34 +19,45 @@
   </header>
 
   <body>
-    <header>
-      <h1 class="main-heading">Piekne meble z zywicy na zamowienie</h1>
-    </header>
-    <main>
+   
+    <main class="main">
+      <header>
+        <h1 class="main-heading">Piekne meble z zywicy na zamowienie</h1>
+      </header> 
       <section>
         <h2 class="about-us">Kim jestesmy</h2>
         <article class="about-us__article">
           Robimy stoly trewniane z rycyna
           <a class="about-us__link" href="https://skogsbjorn.no/produkter">
             Nasze produkty</a
-          >
+          > 
+          <p>uuuu look at me</p>
           <br /> Zobacz jeden z przykladowych stolow
           <a
             class="about-us__link"
             href="https://dekonor.com/product/te-eller-sidebord-i-tre-og-resin/">
-            kliknij tu.</a>
+            kliknij tu. </a> <div class="box"></div>
+
         </article>
       </section>
       <section class="our-products__section">
         <h2 class="our-products__heading">Sprawdz nasze produkty</h2>
-        <article class="our-products__article">
+        <div class="our-products__photos">
           <img class="our-products__photo" src="bord.jpeg" alt="Una mesa de ricina" />
           <img class="our-products__photo" src="bord2.jpeg" alt="Una mesa de ricina" />
-        </article>
+          <img class="our-products__photo" src="bord3.jpeg" alt="Una mesa de ricina" />
+          <img class="our-products__photo" src="bord4.webp" alt="Una mesa de ricina" />
+          <img class="our-products__photo" src="bord.jpeg" alt="Una mesa de ricina" />
+          <img class="our-products__photo" src="bord2.jpeg" alt="Una mesa de ricina" />
+          <img class="our-products__photo" src="bord3.jpeg" alt="Una mesa de ricina" />
+          <img class="our-products__photo" src="bord4.webp" alt="Una mesa de ricina" />
+
+
+        </div>
       </section>
     </main>
-    <footer>
-      Skontaktuj sie z nami <a href="#top">Wroc na gore strony</a>
+    <footer class="footer">
+      Skontaktuj sie z nami <a class="footer__link" href="#top">Wroc na gore strony</a>
     </footer>
 
     <script src="main.js"></script>
