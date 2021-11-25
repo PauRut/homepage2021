@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="style.css" rel = "stylesheet" type="text/css">
+
+</head>
+<header class="navigation">
+    
+    <nav> 
+     <a class="navigation__link" href="index.html">Strona glowna</a>
+     <a class="navigation__link" href="formularz.html"> Formularz</a>
+     <a class="navigation__link" href="sklep.html"> Nasz sklep</a>
+
+    </nav>
+</header>
+<body>
+    <main>
+            <h1>Formularz</h1>
+        
+<form class ="form">
+    <p> <label for="firstName">Your name:</label>
+        <input class="form__item" type="text" id="firstName" name="firstName">
+    </p>
+    <p> <label>Your second name:
+        <input class="form__item" type="text"  placeholder="Please enter your last name"  id="secondtName" name="secondtName"></label>
+    </p>
+
+    <p>
+        <label>Phone number:<input id="" name="phoneNumber"  type="tel"></label> 
+    </p>
+
+    <p>
+        <label>Your email:<input id="email" name="email" placeholder="myemail@gmail.com" type="email"></label> 
+    </p>
+    
+<fieldset><legend>Address:</legend>
+    <p> <label>Your city:
+        <input class="form__item" type="text"  placeholder="Please enter your city name"  id="cityName" name="cityName"></label>
+    </p>
+    <p> <label>Your street name:
+        <input class="form__item" type="text"  placeholder="Please enter your street name"  id="streetName" name="streetName"></label>
+    </p>
+</fieldset>
+
+<fieldset><legend>Your age:</legend>
+<p>
+    <label><input name="age" type="radio" value="0-9">0-9</label>
+</p>
+<p>
+    <label><input name="age" type="radio" value="10-20">10-20</label>
+</p>
+<p>
+    <label><input name="age" type="radio" value="21-50">21-50</label>
+</p>
+</fieldset>
+
+<p>
+    <label>Add your photo:<input id="avatar" name="avatar" checked type="file"></label>
+ </p>
+
+ 
+ <p>
+    <label>Password:<input id="password" name="password"  type="password"></label> 
+</p>
+
+<p>
+    <label><input name="agreement" checked type="checkbox">I agree</label> 
+</p>
+
+</form>   
+
+</main>
+
+
+
+    <!-- <footer>Skontaktuj sie z nami <a href="#top">Wroc na gore strony</a></footer> -->
+
+</body>
+
+</html>

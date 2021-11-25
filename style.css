@@ -5,6 +5,12 @@ html {
   box-sizing: inherit;
 }
 
+body {
+background-color: #0093E9;
+background-image: linear-gradient(326deg, #0093E9 36%, #80D0C7 70%);
+min-height: 100vh;
+
+}
 
 .box {
   background-color: rebeccapurple;
@@ -82,45 +88,41 @@ a {
 
 }
 
+.form {
+
+}
+
+.form__item {
+  width: 25%;
+}
+
+
 .footer {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-.navigation {
-  background: #2dd145;
-  border-radius: 10px;
-  height: 30px;
-}
-
-.navigation__link {
-    color: #4f1b64;
-    display: inline-block;
-    margin: 6px 20px 0 0;
-}
-.navigation__link--homepage {
-    color: #b84242;
-    margin-left: 20px;
-
-}
 .main {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-p {
-  animation-duration: 3s;
-  animation-name: slidein;
+.navigation {
+  background: #80D0C7;
+  border-radius: 10px;
+  height: 100px;
+  padding: 16px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
+.navigation__link {
+    color: #fefefe;
+    background-color: #0093E9;
+    width: 100px;
+    height: 30px;
+    margin: 6px 20px 0 0;
+    text-decoration: none;
 }
+  
