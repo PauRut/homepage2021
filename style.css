@@ -5,6 +5,49 @@ html {
   box-sizing: inherit;
 }
 
+
+
+a {
+  color: orange;
+}
+
+.about-us {
+    color: #b84242;
+    background: #fff;
+}
+.about-us:hover{
+  color: #fff;
+  background: #b84242;
+
+}
+
+.about-us::before {
+  content: " ";
+  background-color: black;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px 0 0;
+}
+
+.about-us::after {
+  content: " ";
+  background-color: black;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 0 0 5px;
+}
+.about-us__article {
+    color:#b84242;
+    padding-bottom: 10px;
+}
+
+.about-us__link {
+
+}
 body {
 background-color: #0093E9;
 background-image: linear-gradient(326deg, #0093E9 36%, #80D0C7 70%);
@@ -12,15 +55,6 @@ min-height: 100vh;
 
 }
 
-.box {
-  background-color: rebeccapurple;
-  border-radius: 10px;
-  width: 100px;
-  height: 100px;
-  animation-name: rotate;
-  animation-duration: 0.7s;
-  animation-direction: reverse;
-}
 
 .change-background-js {
 background-color: yellow;
@@ -57,8 +91,12 @@ width: 100%;
 }
 
 .our-products__heading {
-  color: white;
+  color: #fff;
   background-color: #b84242;}
+
+  .our-products__heading:hover {
+    color: #b84242;
+    background-color: #fff;}
 
 
 .our-products__article{
@@ -88,24 +126,7 @@ nav a {
   color: green;
 }
 
-a {
-  color: orange;
-}
 
-.about-us {
-    color: #b84242;
-    background: #fff;
-}
-
-.about-us__article {
-    color:#b84242;
-    padding-bottom: 10px;
-    border-bottom: 1px solid black;
-}
-
-.about-us__link {
-
-}
 
 .main__form {
   display: flex;
@@ -135,6 +156,17 @@ a {
 display: grid;
 color:white;}
 
+/* .grid__main {
+display: grid;
+column-gap: 16px;
+row-gap: 16px;
+grid-template-areas:
+  "h2 h2 h2"
+  "article img img"
+  "h3 h3 h3";
+grid-template-columns: [first] 2fr [second] 1fr [third] 1fr;
+
+} */
 
 .main {
   max-width: 1000px;
@@ -150,6 +182,12 @@ color:white;}
     color: #111;
     display: block;
     /* text-decoration: none; */
+}
+
+.navigation__link:first-child {
+  background: blue;
+  display: block;
+  /* text-decoration: none; */
 }
 
 .navigation--open {
@@ -177,6 +215,12 @@ color:white;}
     margin: 6px 20px 0 0;
     text-decoration: none;
 }
+
+.navigation__link:hover {
+  color: #b84242;
+
+}
+
 .main {
   max-width: 1000px;
   margin: 100px auto 0;
@@ -185,3 +229,5 @@ color:white;}
 display: none;
 }
 }
+
+
