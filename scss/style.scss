@@ -73,8 +73,13 @@ a {
 }
 body {
   background-color: black;
-  background-image: linear-gradient(326deg, #0093e9 36%, #80d0c7 70%);
+  color: white;
+  // background-image: linear-gradient(326deg, #0093e9 36%, #80d0c7 70%);
   min-height: 100vh;
+}
+
+.main-heading-white {
+color: white;
 }
 
 .change-background-js {
