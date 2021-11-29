@@ -1,0 +1,100 @@
+body {
+    background-color: #0093e9;
+    background-image: linear-gradient(326deg, #0093e9 36%, #80d0c7 70%);
+    min-height: 100vh;
+  }
+  .main {
+    display: grid;
+    column-gap: 16px;
+    row-gap: 16px;
+    grid-template-areas:
+      "header header header"
+      "article . aside"
+      "footer footer footer";
+    grid-template-columns: [first] 1fr [second] 64px [third] 200px;
+  }
+  
+  .header {
+    background-color: #0093e9;
+    grid-column: first / 4;
+  }
+  .article {
+    grid-area: article;
+  }
+  .aside {
+    grid-area: aside;
+  }
+  .footer {
+    background-color: #80d0c7;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    min-height: 50px;
+  }
+  
+
+  
+  @media screen and (max-width: 768px) {
+   
+    .footer {
+      background-color: red;
+    }
+    .header {
+      background-color: red;
+    }
+    .main {
+      display: block;
+      column-gap: 16px;
+      row-gap: 16px;
+      grid-template-areas:
+        "header header header"
+        "article . aside"
+        "footer footer footer";
+      grid-template-columns: [first] 1fr [second] 64px [third] 200px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 435px) {
+      
+      .footer {
+        background-color: violet;
+      }
+      .header {
+        background-color: pink;
+      }
+      .main {
+        display: block;
+        column-gap: 16px;
+        row-gap: 16px;
+        grid-template-areas:
+          "header header header"
+          "article . aside"
+          "footer footer footer";
+        grid-template-columns: [first] 1fr [second] 64px [third] 200px;
+      }
+      .aside__hide {
+          display: none;
+      }
+    }
+  
+    @media screen and (max-width: 320px) {
+      
+      .footer {
+        background-color: orange;
+      }
+      .header {
+        background-color: yellow;
+      }
+      .main {
+        display: block;
+        column-gap: 16px;
+        row-gap: 16px;
+        grid-template-areas:
+          "header header header"
+          "article . aside"
+          "footer footer footer";
+        grid-template-columns: [first] 1fr [second] 64px [third] 200px;
+      }
+  
+     
+    }

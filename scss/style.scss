@@ -1,3 +1,18 @@
+@import "modules/grid.scss";
+@import "modules/main.scss";
+@import "modules/card.scss";
+@import "modules/card.scss";
+
+
+:root {
+  --red-color: #b84242;
+}
+
+.shop {
+  background: black;
+  color: white;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -7,16 +22,18 @@ html {
   box-sizing: inherit;
 }
 
+
+
 a {
   color: orange;
 }
 
 .about-us {
-  color: #b84242;
+  color: var(--red-color);
   background: #fff;
   &:hover {
     color: #fff;
-    background: #b84242;
+    background: var(--red-color); }
   &::after {
     content: " ";
     background-color: black;
@@ -24,7 +41,7 @@ a {
     width: 12px;
     border-radius: 50%;
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 5px; }
   &::before {
     content: " ";
     background-color: black;
@@ -33,9 +50,8 @@ a {
     border-radius: 50%;
     display: inline-block;
     margin-right: 5px;  
-    }
-  }
-} }
+    } } 
+  
 
 .about-us::before {
   content: " ";
@@ -49,14 +65,14 @@ a {
 
 .about-us {
   &__article {
-    color: #b84242;
+    color: var(--red-color);
     padding-bottom: 10px;
   }
 }
 .about-us__link {
 }
 body {
-  background-color: #0093e9;
+  background-color: black;
   background-image: linear-gradient(326deg, #0093e9 36%, #80d0c7 70%);
   min-height: 100vh;
 }
@@ -95,15 +111,15 @@ body {
 
 .our-products__heading {
   color: #fff;
-  background-color: #b84242;
+  background-color: var(--red-color);
   &:hover {
-    color: #b84242;
+    color: var(--red-color);
     background-color: #fff;
   }
 }
 
 .our-products__article {
-  color: #b84242;
+  color: var(--red-color);
 }
 
 .our-products__photo {
@@ -174,26 +190,7 @@ nav a {
   margin: 60px auto 0;
 }
 
-.navigation {
-  padding: 16px;
-  display: none;
-}
 
-.navigation__link {
-  color: #111;
-  display: block;
-  /* text-decoration: none; */
-}
-
-.navigation__link:first-child {
-  background: blue;
-  display: block;
-  /* text-decoration: none; */
-}
-
-.navigation--open {
-  display: block;
-}
 
 @media screen and (min-width: 768px) {
   .navigation {
@@ -213,7 +210,7 @@ nav a {
       margin: 6px 20px 0 0;
       text-decoration: none;
       &:hover {
-        color: #b84242;
+        color: var(--red-color);
       }
     }
   }
